@@ -1,7 +1,9 @@
+import PromodoroTimer from "../../components/PromodoroTimer/PromodoroTimer";
+
 export default function Home () {
   return (
     <main>
-      <h1>Hello Next JS</h1>
+      <PromodoroTimer/>
     </main>
   )
 }
