@@ -1,6 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 type AnalyticsState = {
+  badges: any;
+  streak: any;
   focusSessions: number[];
 };
 
