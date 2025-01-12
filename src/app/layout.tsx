@@ -1,10 +1,12 @@
-import { ReactNode } from 'react';
-import { ClientProvider } from '../../components/ClientProvider/ClientProvider';
-
+import { ReactNode } from "react";
+// import { ClientProvider } from "../../components/ClientProvider/ClientProvider";
+// import { SessionProvider } from "next-auth/react";
+import AppProviders from "../../components/AppProviders/AppProviders";
 
 export const metadata = {
   title: "Productivity Tracker",
-  description: "A Promodoro timer and focus time tracker for effective time management",
+  description:
+    "A Promodoro timer and focus time tracker for effective time management",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -14,7 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
-        <ClientProvider>{children}</ClientProvider>
+          <AppProviders>{children}</AppProviders> 
       </body>
     </html>
   );
