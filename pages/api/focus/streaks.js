@@ -1,4 +1,4 @@
-import dbConnect from '../../../../utils/dbConnect';
+import dbConnect from '../../../utils/dbconnect';
 import FocusSession from '../../../models/FocusSession';
 import { authenticateToken } from '../../../utils/auth';
 
