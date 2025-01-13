@@ -7,7 +7,7 @@ type TimerState = {
 };
 
 const initialState: TimerState = {
-  time: 1 * 60, // 25 minutes
+  time: 25 * 60, // 25 minutes
   isRunning: false,
   isBreak: false,
 };
